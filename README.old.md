@@ -1,2 +1,0 @@
-# Inact
-TaxAdda Frontend Assignment.
