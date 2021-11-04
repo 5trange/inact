@@ -6,7 +6,9 @@ import { StyledHeader, StyledHeading } from "./HeaderStyle";
 const Header = () => {
     return(
         <StyledHeader> 
-            <StyledHeading>Inact</StyledHeading>
+            <StyledHeading>
+                Inact
+            </StyledHeading>
         </StyledHeader>
     );
 

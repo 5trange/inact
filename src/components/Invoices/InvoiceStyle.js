@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 /* Invoice header stylesheet */
-export const StyledInvoiceHeader = styled.header`
+export const Header = styled.header`
     display: grid;
     grid-template-columns: ifr auto auto;
     gap: 17px;
@@ -28,4 +28,19 @@ export const Container = styled.section`
         margin: 0 auto 40px auto;
         padding: 0;
     }
+`;
+
+export const Info = styled.div``;
+
+/* Invoice text stylesheet */
+export const Text = styled.p`
+    transition: color 400ms ease-in;
+`;
+
+/* Invoice title stylesheet */
+export const Title = styled.h1`
+    font-size: 2.0rem;
+    letter-spacing: -0.03125rem;
+    line-height: 2.14;
+    margin-bottom: 4px;
 `;
