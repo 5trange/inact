@@ -1,27 +1,11 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { headingTitle } from '../dist/CommonStyle';
 
-/* Invoice header stylesheet */
-export const Header = styled.header`
-    display: grid;
-    grid-template-columns: ifr auto auto;
-    gap: 17px;
-    align-items: center;
-    margin: 32px 0;
-
-    @media  (min-width: 768px) {
-        gap: 40px;
-    }
-
-    @media  (min-width: 1024px) {
-        margin: 72px 0 64px 0;
-    }
-`;
-
-/* Invoice content stylesheet */
+// Invoice container style
 export const Container = styled.section`
     padding: 0 24px;
     margin-bottom: 40px;
+
     @media (min-width: 768px) {
         width: 100%;
         max-width: 730px;
@@ -30,17 +14,35 @@ export const Container = styled.section`
     }
 `;
 
-export const Info = styled.div``;
+// Invoice header style
+export const Header = styled.div`
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 18px;
+    align-items: center;
+    margin: 32px 0;
+    padding-left: 40px;
 
-/* Invoice text stylesheet */
-export const Text = styled.p`
-    transition: color 400ms ease-in;
+    @media (min-width: 768px) {
+        gap: 40px;
+    }
+
+    @media (min-width: 1024px) {
+        margin: 72px 0 64px 0;
+    }
 `;
 
-/* Invoice title stylesheet */
+// Invoice info style
+export const Info = styled.div``;
+
+// Invoice title style
 export const Title = styled.h1`
-    font-size: 2.0rem;
-    letter-spacing: -0.03125rem;
-    line-height: 2.14;
+    ${headingTitle}
     margin-bottom: 4px;
+`;
+
+// Basic text style
+export const Text = styled.p`
+    color: #5E81AC;
+    transition: color 400ms ease-in;
 `;

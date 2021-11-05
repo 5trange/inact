@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import plusicon from "../../dist/plus.svg"
 
 export const primaryButton = css`
 font-size: 0.75rem;
@@ -35,7 +34,6 @@ const newinvoiceButton = css`
         width: 32px;
         height: 32px;
         background-color: #8FBCBB;
-        background-image: url('${plusicon}');
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 50%;
