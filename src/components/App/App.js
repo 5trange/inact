@@ -8,7 +8,7 @@ function App() {
     <Wrapper>
       <Header />
       <BrowserRouter>
-        <Invoices />
+        <Route component={Invoices} />
       </BrowserRouter>
     </Wrapper>
   );

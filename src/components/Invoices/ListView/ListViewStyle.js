@@ -57,10 +57,6 @@ export const Invoiceid = styled.p`
     }
 `;
 
-export const Slno = styled.span`
-    color: #5E81AC;
-`;
-
 export const PaymentDue = styled.p`
     grid-area: paymentdue;
     color: #5E81AC;

@@ -5,10 +5,9 @@ import { Link } from 'react-router-dom';
 export const StyledHeader = styled.header`
     display: grid;
     grid-template-columns: 1fr auto auto;
-    background-color: #D8DEE9;
+    background-color: #88C0D0;
     height: clamp(72px, 10.5vw, 80px);
     transition: background-color 400s ease-in-out;
-    z-index: 100;
     @media (min-width: 1024px) {
         position: sticky;
         top: 0;
