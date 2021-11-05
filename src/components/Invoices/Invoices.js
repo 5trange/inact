@@ -13,7 +13,7 @@ const Invoices = () => {
                         These are the invoices available. 
                     </Text>
                 </Info>
-                <Button type="button" $primary>
+                <Button type="button" $agreeButton>
                     Create
                 </Button>
             </Header>

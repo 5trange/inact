@@ -5,10 +5,15 @@ export const primaryButton = css`
     padding: 16px 32px;
     border-radius: 4px;
     border: none;
-    background: #8FBCBB;
     color: #fff;
     font-size: 0.75rem;
     cursor: pointer;
+    transition: background-color 300ms ease-in-out, color 400ms ease-in-out;
+`;
+
+const agreeButton = css`
+    ${primaryButton}
+    background: #8FBCBB;
     @media (min-width: 768px) {
         &:hover {
             background-color: #A3BE8C;
@@ -16,19 +21,30 @@ export const primaryButton = css`
     }
 `;
 
-const newinvoiceButton = css`
+const cancelButton = css`
     ${primaryButton}
+    background: #EBCB8B;
+    @media (min-width: 768px) {
+        &:hover {
+            background-color: #BF616A;
+        }
+    }
 `;
 
 export const StyledButton = styled.button`
-    ${({ $newInvoice }) =>
-        $newInvoice &&
+    ${({ $agreeButton }) =>
+        $agreeButton &&
         css`
-            ${newinvoiceButton}
+            ${agreeButton}
         `};
     ${({ $primary }) =>
         $primary &&
         css`
             ${primaryButton}
+        `};
+    ${({ $cancelButton }) =>
+        $cancelButton &&
+        css`
+            ${cancelButton}
         `};
 `;
