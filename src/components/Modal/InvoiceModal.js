@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import Button from '../dist/Button/Button';
 import { 
         Background, 
@@ -11,7 +12,6 @@ import {
         CloseModalButton
     }from './InvoiceModalStyle';
 import TextInput from '../dist/TextInput/TextInput';
-import BasicSelect from '../dist/DropDown/DropDown';
 
 export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) => {
     return (
@@ -23,11 +23,26 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                             
                             <ModalContent>
                                 <div>
+                                    <ModalHeader>
+                                        <h1>Create new Invoice</h1>
+                                    </ModalHeader>
+                                </div>
+                                <div />
+                                <div>
+                                    <ModalValues>
+                                        <TextInput 
+                                            id={'invoiceid'}
+                                            label="Invoice ID"
+                                            locked={false}
+                                            active={false} 
+                                        />
+                                    </ModalValues>
+                                </div>
+                                <div>
                                     <ModalValues>
                                         <TextInput 
                                             id={'custname'}
                                             label="Customer Name"
-                                            predicted="Strange"
                                             locked={false}
                                             active={false} 
                                         />
@@ -36,9 +51,8 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                 <div>
                                     <ModalValues>
                                         <TextInput 
-                                            id={'custadd'}
-                                            label="Customer Address"
-                                            predicted="India"
+                                            id={'invoiceamount'}
+                                            label="Amount"
                                             locked={false}
                                             active={false} 
                                         />
@@ -47,9 +61,8 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                 <div>
                                     <ModalValues>
                                         <TextInput 
-                                            id={'workhours'}
-                                            label="Work Hours"
-                                            predicted="6"
+                                            id={'items'}
+                                            label="Items"
                                             locked={false}
                                             active={false} 
                                         />
@@ -58,20 +71,8 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                 <div>
                                     <ModalValues>
                                         <TextInput 
-                                            id={'materials'}
-                                            label="Materials"
-                                            predicted="Timber"
-                                            locked={false}
-                                            active={false} 
-                                        />
-                                    </ModalValues>
-                                </div>
-                                <div>
-                                    <ModalValues>
-                                        <TextInput 
-                                            id={'notes'}
+                                            id={'invoicenotes'}
                                             label="Invoice Notes"
-                                            predicted="Cash"
                                             locked={false}
                                             active={false} 
                                         />
@@ -79,12 +80,17 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        <BasicSelect></BasicSelect>
+                                        <TextInput 
+                                            id={'invoicestatus'}
+                                            label="Status"
+                                            locked={false}
+                                            active={false} 
+                                        />
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalCancel>
-                                        <Button type="button" $cancelButton>
+                                        <Button type="button" $cancelButton onClick={() => setShowNewInvoiceModal(prev => !prev)}>
                                             Cancel
                                         </Button>
                                     </ModalCancel>     
@@ -93,7 +99,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                     <ModalProceed>
                                         <Button type="button" $agreeButton>
                                             Send
-                                        </Button>
+                                        </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <Button type="button" $agreeButton>
                                             Create
                                         </Button>

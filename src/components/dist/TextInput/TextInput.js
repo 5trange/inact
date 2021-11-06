@@ -52,6 +52,7 @@ export default class TextInput extends Component {
                     type="text"
                     value={value}
                     placeholder={label}
+                    autocomplete="off"
                     onChange={this.onChange}
                     onFocus={() => !locked && this.setState({ focused: true })}
                     onBlur={() => !locked && this.setState({ focused: false })}

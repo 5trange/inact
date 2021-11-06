@@ -24,7 +24,7 @@ export const CreateModalWrapper = styled.div`
     margin: 0;
     padding: 50px;
     width: 800px;
-    height: 500px;
+    height: 600px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     background: #2E3440;
     color: #000;
@@ -35,15 +35,15 @@ export const CreateModalWrapper = styled.div`
 `;
 
 export const ModalContent = styled.div`
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    gap: 31px 13px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 31px 13px;
+    grid-template-areas:
         "ModalHeader ModalHeader"
-        "ModalVars ModalValues"
-        "ModalVars ModalValues"
-        "ModalCancel ModalProceed"; 
+        "ModalValues ModalValues"
+        "ModalValues ModalValues"
+        "ModalCancel ModalProceed";
     flex-direction: column;
     justify-content: center;
     line-height: 1.8;
@@ -51,19 +51,25 @@ export const ModalContent = styled.div`
 `;
 
 export const ModalValues = styled.div`
+    padding-left: 30px;
     grid-area: ModalValues;
 `;
 
 export const ModalHeader = styled.div`
+    padding-left: 30px;
     grid-area: ModalHeader;
 `;
 
 export const ModalCancel = styled.div`
     grid-area: ModalCancel;
+    padding-left: 30px;
+    padding-bottom: 30px;
 `;
 
 export const ModalProceed = styled.div`
     grid-area: ModalProceed;
+    padding-left: 30px;
+    padding-bottom: 30px;
 `;
 
 export const CloseModalButton = styled(MdClose)`
