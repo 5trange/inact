@@ -16,7 +16,7 @@ export const Background = styled.div`
 `;
 
 // Makes the modal appear on the center of the screen.
-export const CreateModalWrapper = styled.div`
+export const InvoiceDisplayWrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

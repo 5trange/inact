@@ -13,7 +13,7 @@ export const StyledList = styled.ul`
 
 export const Item = styled.li`
     background-color: #4c566A;
-    border-radius: 8px;
+    border-radius: 4px;
     list-style-type: none;
     box-shadow: 0 10px 10px -10px #434C5E;
     transition: background-color 400ms ease-in-out;
@@ -26,9 +26,9 @@ export const Link = styled(RouterLink)`
     grid-template-areas: 'invoiceid clientname paymentdue totalprice status';
     justify-content: space-between;
     padding: 24px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    transition: border 350ms ease-in-out;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: border 150ms ease-in-out;
     &:focus {
         outline: none;
     }
@@ -42,7 +42,7 @@ export const Link = styled(RouterLink)`
         align-items: center;
         padding: 15px 20px 15px 32px;
         &:hover {
-            border: 1px solid #A3BE8C;
+            border: 3px solid #A3BE8C;
         }
         svg {
             margin-left: auto;

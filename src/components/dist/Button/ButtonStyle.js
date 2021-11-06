@@ -5,7 +5,7 @@ export const primaryButton = css`
     padding: 16px 32px;
     border-radius: 4px;
     border: none;
-    color: #fff;
+    color: #2E3440;
     font-size: 0.75rem;
     cursor: pointer;
     transition: background-color 300ms ease-in-out, color 400ms ease-in-out;
