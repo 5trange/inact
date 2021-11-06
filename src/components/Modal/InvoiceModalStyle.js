@@ -15,6 +15,7 @@ export const Background = styled.div`
     z-index: 1000;
 `;
 
+// Makes the modal appear on the center of the screen.
 export const CreateModalWrapper = styled.div`
     top: 50%;
     left: 50%;
@@ -28,19 +29,41 @@ export const CreateModalWrapper = styled.div`
     background: #2E3440;
     color: #000;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     position: fixed;
     border-radius: 10px;
     z-index: 1000;
 `;
 
 export const ModalContent = styled.div`
-    display: flex;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 31px 13px; 
+    grid-template-areas: 
+        "ModalHeader ModalHeader"
+        "ModalVars ModalValues"
+        "ModalVars ModalValues"
+        "ModalCancel ModalProceed"; 
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     line-height: 1.8;
-    color: #141414;
+    color: #D8DEE9;
+`;
+
+export const ModalValues = styled.div`
+    grid-area: ModalValues;
+`;
+
+export const ModalHeader = styled.div`
+    grid-area: ModalHeader;
+`;
+
+export const ModalCancel = styled.div`
+    grid-area: ModalCancel;
+`;
+
+export const ModalProceed = styled.div`
+    grid-area: ModalProceed;
 `;
 
 export const CloseModalButton = styled(MdClose)`

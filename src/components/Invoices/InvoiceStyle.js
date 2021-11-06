@@ -10,7 +10,7 @@ export const Container = styled.section`
         width: 100%;
         max-width: 730px;
         margin: 0 auto 40px auto;
-        padding: 0;
+        padding-right: 120px;
     }
 `;
 
