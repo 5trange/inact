@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Button from '../dist/Button/Button';
 import { 
         Background, 
@@ -12,6 +11,7 @@ import {
         CloseModalButton
     }from './InvoiceModalStyle';
 import TextInput from '../dist/TextInput/TextInput';
+import BasicSelect from '../dist/DropDown/DropDown';
 
 export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) => {
     return (
@@ -75,6 +75,11 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                             locked={false}
                                             active={false} 
                                         />
+                                    </ModalValues>
+                                </div>
+                                <div>
+                                    <ModalValues>
+                                        <BasicSelect></BasicSelect>
                                     </ModalValues>
                                 </div>
                                 <div>

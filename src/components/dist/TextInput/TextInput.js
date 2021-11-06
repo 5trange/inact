@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './TextInput.css';
+import './TextInputStyle.css';
 
 export default class TextInput extends Component {
 
