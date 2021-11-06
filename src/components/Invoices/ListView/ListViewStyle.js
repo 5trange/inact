@@ -22,8 +22,8 @@ export const Item = styled.li`
 export const Link = styled(RouterLink)`
     display: grid;
     text-decoration: none;
-    grid-template-rows: 1.5fr 1fr 1fr;
-    grid-template-areas: 'invoiceid clientname' 'paymentdue status' 'totalprice invoicestatus';
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'invoiceid clientname paymentdue totalprice status';
     justify-content: space-between;
     padding: 24px;
     border: 1px solid transparent;
@@ -38,7 +38,7 @@ export const Link = styled(RouterLink)`
     @media (min-width: 768px) {
         grid-template-rows: unset;
         grid-template-areas: unset;
-        grid-template-columns: 103px 151px 145px 103px 146px 28px;
+        grid-template-columns: 100px 150px 150px 100px 146px;
         align-items: center;
         padding: 15px 20px 15px 32px;
         &:hover {
@@ -51,42 +51,45 @@ export const Link = styled(RouterLink)`
 `;
 
 export const Invoiceid = styled.p`
+    ${headingMedium}
     grid-area: invoiceid;
-    @media (min-width: 768px) {
-        grid-area: unset;
-    }
-`;
-
-export const PaymentDue = styled.p`
-    grid-area: paymentdue;
-    color: #5E81AC;
-    transition: color 400ms ease-in-out;
+    color: #D8DEE9;
     @media (min-width: 768px) {
         grid-area: unset;
     }
 `;
 
 export const ClientName = styled.p`
+    ${headingMedium}
     grid-area: clientname;
-    justify-self: end;
-    color: #5E81AC;
-    transition: color 400ms ease-in-out;
+    color: #D8DEE9;
     @media (min-width: 768px) {
         grid-area: unset;
-        justify-self: start;
+    }
+`;
+
+export const PaymentDue = styled.p`
+    ${headingMedium}
+    grid-area: paymentdue;
+    color: #D8DEE9;
+    @media (min-width: 768px) {
+        grid-area: unset;
     }
 `;
 
 export const TotalPrice = styled.p`
     ${headingMedium}
     grid-area: totalprice;
+    color: #D8DEE9;
     @media (min-width: 768px) {
         grid-area: unset;
     }
 `;
 
 export const InvoiceStatus = styled.p`
-    grid-area: invoicestatus;
+    ${headingMedium}
+    grid-area: status;
+    color: #D8DEE9;
     @media (min-width: 768px) {
         grid-area: unset;
     }
