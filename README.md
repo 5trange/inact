@@ -1,4 +1,4 @@
-# Inact (INvoice reACT)
+# INACT (INvoice reACT)
 
 An invoice management front-end. Developed as an assignment for TaxAdda.
 
