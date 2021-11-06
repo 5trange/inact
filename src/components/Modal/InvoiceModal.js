@@ -50,8 +50,8 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                 <div>
                                     <ModalValues>
                                         <TextInput 
-                                            id={'invoiceamount'}
-                                            label="Amount"
+                                            id={'date'}
+                                            label="Date"
                                             locked={false}
                                             active={false} 
                                         />
@@ -60,8 +60,8 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                 <div>
                                     <ModalValues>
                                         <TextInput 
-                                            id={'items'}
-                                            label="Items"
+                                            id={'amount'}
+                                            label="Amount"
                                             locked={false}
                                             active={false} 
                                         />

@@ -39,7 +39,6 @@ export const Link = styled(RouterLink)`
         grid-template-rows: unset;
         grid-template-areas: unset;
         grid-template-columns: 100px 150px 150px 100px 146px;
-        align-items: center;
         padding: 15px 20px 15px 32px;
         &:hover {
             border: 3px solid #A3BE8C;

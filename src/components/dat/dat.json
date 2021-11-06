@@ -1,0 +1,37 @@
+[
+    {
+        "id": "INV0001",
+        "custname": "Strange",
+        "amount": "1200",
+        "duedate": "13-Dec-2023",
+        "invoicenotes": "SSD",
+        "invoicestatus": "Outstanding"
+    },
+
+    {
+        "id": "INV0002",
+        "custname": "John",
+        "amount": "3200",
+        "duedate": "18-Jan-2021",
+        "invoicenotes": "Modem, Keyboard",
+        "invoicestatus": "Paid"
+    },
+
+    {
+        "id": "INV0003",
+        "custname": "Xander",
+        "amount": "600",
+        "duedate": "21-Mar-2021",
+        "invoicenotes": "USB Mouse, MicroSD",
+        "invoicestatus": "Late"
+    },
+
+    {
+        "id": "INV0004",
+        "custname": "Belle",
+        "amount": "900",
+        "duedate": "27-Jan-2021",
+        "invoicenotes": "Desk Mat",
+        "invoicestatus": "Paid"
+    }
+]

@@ -4,6 +4,7 @@ import {
 
 import { useState } from "react";
 import { InvoiceDetails } from "../../Modal/InvoiceDetails";
+import PostData from '../../dat/dat.json';
 
 const List = () => {
     const [showInvoiceModal, setShowInvoiceModal] = useState(false)
@@ -15,15 +16,17 @@ const List = () => {
     return(
         <>
             <StyledList>
-                <Item>
-                    <Link to="/" onClick={openInvoiceDetails}>
-                        <Invoiceid>No. 123</Invoiceid>
-                        <ClientName>Strange</ClientName>
-                        <PaymentDue>Due 13-13-2023</PaymentDue>
-                        <TotalPrice>1200</TotalPrice>
-                        <InvoiceStatus>Paid</InvoiceStatus>
-                    </Link>
-                </Item>
+                {PostData.map((postDetail, index) => {
+                    return <Item>
+                        <Link to="/" onClick={openInvoiceDetails}>
+                            <Invoiceid>No:{postDetail.id}</Invoiceid>
+                            <ClientName>{postDetail.custname}</ClientName>
+                            <PaymentDue>Due:{postDetail.duedate}</PaymentDue>
+                            <TotalPrice>{postDetail.amount}₹</TotalPrice>
+                            <InvoiceStatus>{postDetail.invoicestatus}</InvoiceStatus>
+                        </Link>
+                    </Item>
+                })}
             </StyledList>
             <InvoiceDetails showInvoiceModal={showInvoiceModal} setShowInvoiceDetails={setShowInvoiceModal} />
         </>
