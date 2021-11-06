@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../dist/Button/Button';
 import { 
         Background, 
-        CreateModalWrapper, 
         ModalContent, 
         ModalValues,
         ModalHeader,
@@ -11,7 +10,6 @@ import {
         CloseModalButton,
         InvoiceDisplayWrapper
     }from './InvoiceDetailsStyle';
-import TextInput from '../dist/TextInput/TextInput';
 
 export const InvoiceDetails = ({ showInvoiceModal, setShowInvoiceDetails }) => {
     return (

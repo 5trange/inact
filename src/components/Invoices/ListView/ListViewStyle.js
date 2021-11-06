@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
-import { headingExtraSmall, headingMedium } from '../../dist/CommonStyle';
+import { headingMedium } from '../../dist/CommonStyle';
 
 // Invoice list styles
 

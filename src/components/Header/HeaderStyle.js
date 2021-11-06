@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 /* Primary header stylesheet */
 export const StyledHeader = styled.header`
