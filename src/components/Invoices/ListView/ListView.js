@@ -16,7 +16,7 @@ const List = () => {
         <>
             <StyledList>
                 <Item>
-                    <Link onClick={openInvoiceDetails}>
+                    <Link to="/" onClick={openInvoiceDetails}>
                         <Invoiceid>No. 123</Invoiceid>
                         <ClientName>Strange</ClientName>
                         <PaymentDue>Due 13-13-2023</PaymentDue>
