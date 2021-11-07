@@ -32,32 +32,32 @@ export const InvoiceDetails = ( props ) => {
                                 <div />
                                 <div>
                                     <ModalValues>
-                                        Invoice ID:
+                                        Invoice ID: {details.id}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Customer Name: PlaceHolder
+                                        Customer Name: {details.custname}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Date: PlaceHolder
+                                        Date: {details.duedate}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Amount: PlaceHolder
+                                        Amount: {details.amount}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Invoice Notes: PlaceHolder
+                                        Invoice Notes: {details.invoicenotes}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Status: PlaceHolder
+                                        Status: {details.invoicestatus}
                                     </ModalValues>
                                 </div>
                                 <div>
@@ -72,7 +72,7 @@ export const InvoiceDetails = ( props ) => {
                                         <Button type="button" $agreeButton>
                                             Send
                                         </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <Button type="button" $agreeButton>
+                                        <Button type="button" $agreeButton onClick={() => setShowInvoiceDetails(prev => !prev)}>
                                             Ok
                                         </Button>
                                     </ModalProceed>  
