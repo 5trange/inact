@@ -12,12 +12,21 @@ const List = () => {
     const openInvoiceDetails = () => {
         setShowInvoiceModal(prev => !prev)
     }
-
+    
     return(
         <>
             <StyledList>
                 {PostData.map((postDetail, index) => {
-                    return <Item>
+                    const dataobject= {
+                        id: postDetail.id,
+                        custname: postDetail.custname,
+                        amount: postDetail.amount,
+                        duedate: postDetail.duedate,
+                        invoicenotes: postDetail.invoicenotes,
+                        invoicestatus: postDetail.invoicestatus
+                    }
+                    return(
+                    <Item>
                         <Link to="/" onClick={openInvoiceDetails}>
                             <Invoiceid>No:{postDetail.id}</Invoiceid>
                             <ClientName>{postDetail.custname}</ClientName>
@@ -25,10 +34,11 @@ const List = () => {
                             <TotalPrice>{postDetail.amount}₹</TotalPrice>
                             <InvoiceStatus>{postDetail.invoicestatus}</InvoiceStatus>
                         </Link>
+                        <InvoiceDetails dataobject={dataobject} showInvoiceModal={showInvoiceModal} setShowInvoiceDetails={setShowInvoiceModal} />
                     </Item>
+                    );
                 })}
             </StyledList>
-            <InvoiceDetails showInvoiceModal={showInvoiceModal} setShowInvoiceDetails={setShowInvoiceModal} />
         </>
     );
 }

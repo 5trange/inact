@@ -11,14 +11,18 @@ import {
         InvoiceDisplayWrapper
     }from './InvoiceDetailsStyle';
 
-export const InvoiceDetails = ({ showInvoiceModal, setShowInvoiceDetails }) => {
+export const InvoiceDetails = ( props ) => {
+    const details = props.dataobject;
+    const showInvoiceModal = props.showInvoiceModal;
+    const setShowInvoiceDetails = props.setShowInvoiceDetails;
+    console.log(details.custname);
+
     return (
         <>
             {
                 showInvoiceModal ? (
                     <Background>
                         <InvoiceDisplayWrapper showInvoiceModal={showInvoiceModal}>
-                            
                             <ModalContent>
                                 <div>
                                     <ModalHeader>
@@ -28,32 +32,32 @@ export const InvoiceDetails = ({ showInvoiceModal, setShowInvoiceDetails }) => {
                                 <div />
                                 <div>
                                     <ModalValues>
-                                        PlaceHolder
+                                        Invoice ID:
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        PlaceHolder
+                                        Customer Name: PlaceHolder
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        PlaceHolder
+                                        Date: PlaceHolder
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        PlaceHolder
+                                        Amount: PlaceHolder
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        PlaceHolder
+                                        Invoice Notes: PlaceHolder
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        PlaceHolder
+                                        Status: PlaceHolder
                                     </ModalValues>
                                 </div>
                                 <div>

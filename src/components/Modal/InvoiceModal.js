@@ -34,6 +34,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                             label="Invoice ID"
                                             locked={false}
                                             active={false} 
+                                            //value={this.state.invoiceid}
                                         />
                                     </ModalValues>
                                 </div>
@@ -44,6 +45,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                             label="Customer Name"
                                             locked={false}
                                             active={false} 
+                                            //value={this.state.custname}
                                         />
                                     </ModalValues>
                                 </div>
@@ -54,6 +56,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                             label="Date"
                                             locked={false}
                                             active={false} 
+                                            //value={this.state.date}
                                         />
                                     </ModalValues>
                                 </div>
@@ -64,6 +67,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                             label="Amount"
                                             locked={false}
                                             active={false} 
+                                            //value={this.state.amount}
                                         />
                                     </ModalValues>
                                 </div>
@@ -74,6 +78,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                             label="Invoice Notes"
                                             locked={false}
                                             active={false} 
+                                            //value={this.state.invoicenotes}
                                         />
                                     </ModalValues>
                                 </div>
@@ -84,6 +89,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                             label="Status"
                                             locked={false}
                                             active={false} 
+                                            //value={this.state.invoicestatus}
                                         />
                                     </ModalValues>
                                 </div>
@@ -96,10 +102,10 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                 </div>
                                 <div>
                                     <ModalProceed>
-                                        <Button type="button" $agreeButton>
+                                        <Button type="button" type="submit" $agreeButton>
                                             Send
                                         </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <Button type="button" $agreeButton>
+                                        <Button type="button" $agreeButton >
                                             Create
                                         </Button>
                                     </ModalProceed>  
