@@ -2,7 +2,7 @@
 
 An invoice management front-end developed using ReactJS. Developed as an assignment for TaxAdda.
 
-Node.js version used: v14.18.1 (Arch Linux pacman ```nodejs-lts-fermium```)
+Node.js version used for development: v14.18.1 (Arch Linux pacman ```nodejs-lts-fermium```)
 
 
 ## Steps to run the WebApp
