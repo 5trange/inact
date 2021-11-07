@@ -24,7 +24,7 @@ export const InvoiceDisplayWrapper = styled.div`
     margin: 0;
     padding: 50px;
     width: 800px;
-    height: 600px;
+    height: 450px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     background: #2E3440;
     color: #000;
