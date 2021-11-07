@@ -12,10 +12,14 @@ import {
     }from './InvoiceDetailsStyle';
 
 export const InvoiceDetails = ( props ) => {
-    const details = props.dataobject;
+    const invid = props.invid;
+    const invname = props.invname;
+    const invdue = props.invdue;
+    const invamount = props.invamount;
+    const invnotes = props.invnotes;
+    const invstatus = props.invstatus;
     const showInvoiceModal = props.showInvoiceModal;
     const setShowInvoiceDetails = props.setShowInvoiceDetails;
-    console.log(details.custname);
 
     return (
         <>
@@ -32,32 +36,32 @@ export const InvoiceDetails = ( props ) => {
                                 <div />
                                 <div>
                                     <ModalValues>
-                                        Invoice ID: {details.id}
+                                        Invoice ID: {invid}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Customer Name: {details.custname}
+                                        Customer Name: {invname}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Date: {details.duedate}
+                                        Date: {invdue}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Amount: {details.amount}
+                                        Amount: {invamount}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Invoice Notes: {details.invoicenotes}
+                                        Invoice Notes: {invnotes}
                                     </ModalValues>
                                 </div>
                                 <div>
                                     <ModalValues>
-                                        Status: {details.invoicestatus}
+                                        Status: {invstatus}
                                     </ModalValues>
                                 </div>
                                 <div>
@@ -73,7 +77,7 @@ export const InvoiceDetails = ( props ) => {
                                             Send
                                         </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <Button type="button" $agreeButton onClick={() => setShowInvoiceDetails(prev => !prev)}>
-                                            Ok
+                                            OK
                                         </Button>
                                     </ModalProceed>  
                                 </div>

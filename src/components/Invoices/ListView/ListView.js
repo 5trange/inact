@@ -17,14 +17,6 @@ const List = () => {
         <>
             <StyledList>
                 {PostData.map((postDetail, index) => {
-                    const dataobject= {
-                        id: postDetail.id,
-                        custname: postDetail.custname,
-                        amount: postDetail.amount,
-                        duedate: postDetail.duedate,
-                        invoicenotes: postDetail.invoicenotes,
-                        invoicestatus: postDetail.invoicestatus
-                    }
                     return(
                     <Item>
                         <Link to="/" onClick={openInvoiceDetails}>
@@ -34,7 +26,16 @@ const List = () => {
                             <TotalPrice>{postDetail.amount}₹</TotalPrice>
                             <InvoiceStatus>{postDetail.invoicestatus}</InvoiceStatus>
                         </Link>
-                        <InvoiceDetails dataobject={dataobject} showInvoiceModal={showInvoiceModal} setShowInvoiceDetails={setShowInvoiceModal} />
+                        <InvoiceDetails 
+                                invid={postDetail.id} 
+                                invname = {postDetail.custname}
+                                invdue = {postDetail.duedate}
+                                invamount = {postDetail.amount}
+                                invnotes = {postDetail.invoicenotes}
+                                invstatus = {postDetail.invoicestatus}
+                                showInvoiceModal={showInvoiceModal} 
+                                setShowInvoiceDetails={setShowInvoiceModal} 
+                        />
                     </Item>
                     );
                 })}
