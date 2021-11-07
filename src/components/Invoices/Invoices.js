@@ -1,6 +1,6 @@
 import "./InvoiceStyle";
 import List from "./ListView/ListView";
-import { Header, Div, Container, Title, Text, Info } from "./InvoiceStyle";
+import { Header, Container, Title, Text, Info } from "./InvoiceStyle";
 import Button from '../dist/Button/Button';
 import { useState } from "react";
 import { InvoiceModal } from "../Modal/InvoiceModal";

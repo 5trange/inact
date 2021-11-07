@@ -43,7 +43,7 @@ export default class TextInput extends Component {
 
     render (){
         const { focused, value, error, label } = this.state;
-        const { id, type, locked } = this.props;
+        const { id, locked } = this.props;
         const fieldClassName = `field ${(locked ? focused : focused || value) && 'focused'} ${locked && !focused && 'locked'}`;
         return(
             <div className={fieldClassName} >
