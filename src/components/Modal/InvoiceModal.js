@@ -32,9 +32,9 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                         <TextInput 
                                             id={'invoiceid'}
                                             label="Invoice ID"
+                                            required={true}
                                             locked={false}
                                             active={false} 
-                                            //value={this.state.invoiceid}
                                         />
                                     </ModalValues>
                                 </div>
@@ -43,9 +43,9 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                         <TextInput 
                                             id={'custname'}
                                             label="Customer Name"
+                                            required={true}
                                             locked={false}
                                             active={false} 
-                                            //value={this.state.custname}
                                         />
                                     </ModalValues>
                                 </div>
@@ -54,9 +54,9 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                         <TextInput 
                                             id={'date'}
                                             label="Date"
+                                            required={true}
                                             locked={false}
                                             active={false} 
-                                            //value={this.state.date}
                                         />
                                     </ModalValues>
                                 </div>
@@ -65,9 +65,9 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                         <TextInput 
                                             id={'amount'}
                                             label="Amount"
+                                            required={true}
                                             locked={false}
                                             active={false} 
-                                            //value={this.state.amount}
                                         />
                                     </ModalValues>
                                 </div>
@@ -76,9 +76,9 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                         <TextInput 
                                             id={'invoicenotes'}
                                             label="Invoice Notes"
+                                            required={true}
                                             locked={false}
                                             active={false} 
-                                            //value={this.state.invoicenotes}
                                         />
                                     </ModalValues>
                                 </div>
@@ -86,10 +86,10 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                     <ModalValues>
                                         <TextInput 
                                             id={'invoicestatus'}
+                                            required={true}
                                             label="Status"
                                             locked={false}
                                             active={false} 
-                                            //value={this.state.invoicestatus}
                                         />
                                     </ModalValues>
                                 </div>
@@ -105,7 +105,7 @@ export const InvoiceModal = ({ showNewInvoiceModal, setShowNewInvoiceModal }) =>
                                         <Button type="button" type="submit" $agreeButton>
                                             Send
                                         </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <Button type="button" $agreeButton >
+                                        <Button type="submit" $agreeButton onClick={() => setShowNewInvoiceModal(prev => !prev)}>
                                             Create
                                         </Button>
                                     </ModalProceed>  
