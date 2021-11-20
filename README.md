@@ -1,6 +1,6 @@
 # INACT (INvoice reACT)
 
-An invoice management front-end developed using ReactJS. Developed as an assignment for TaxAdda.
+An invoice management front-end developed using ReactJS.
 
 Node.js version used for development: v14.18.1 (Arch Linux pacman ```nodejs-lts-fermium```)
 
